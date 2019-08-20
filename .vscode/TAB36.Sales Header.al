@@ -3,10 +3,10 @@ tableextension 50201 "Sales Header.COL.US" extends "Sales Header"
     fields
     {
         // Add changes to table fields here
-        Field(50200; "loyaltyStatus.COL.US"; Option)
+        Field(50200; "loyaltyStatus.COL.US"; Enum "Loyalty Status.SUFFIX")
         {
             DataClassification = CustomerContent;
-            OptionMembers = Bronze,Silver,Gold;
+            //OptionMembers = Bronze,Silver,Gold;
             Caption = 'Loyalty Status';
             Editable = false;
         }
@@ -16,10 +16,10 @@ tableextension 50202 "Sales Invoice Header.COL.US" extends "Sales Invoice Header
 {
     fields
     {
-        field(50200; "loyalytStatus.COL.US"; Option)
+        field(50200; "loyalytStatus.COL.US"; Enum "Loyalty Status.SUFFIX")
         {
             DataClassification = CustomerContent;
-            OptionMembers = Bronze,Silver,Gold;
+            //OptionMembers = Bronze,Silver,Gold;
             Caption = 'Loyalty Status';
 
         }
